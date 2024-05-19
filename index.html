@@ -410,15 +410,16 @@
                 </div>
                 <div class="col-12">
                     <div class="isotope projects-container row js-layout-row project-showcase">
-                        <div class="col-12 isotope-item js-id-machine-learning">
-                            <div class="col-lg-12 mb-5 view-showcase">
+
+                        <div class="col-12 isotope-item js-id-machine-learning card">
+                            <div class="col-lg-12 view-showcase card-body">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 order-first">
                                         <div class="section-subheading article-title mb-0 mt-0">
                                             <a>Computer Vision Powered Powerlifting Judge</a>
                                         </div>
-                                        <div class="article-style">
-                                            Computer vision powered application using OpenPose and YOLOv8 to judge
+                                        <div class="article-style mb-1">
+                                            Computer vision powered application to judge
                                             powerlifting squats autonomously and reliably in real time.
                                         </div>
                                         <div class="row">
@@ -436,6 +437,20 @@
                                                 </a>
                                             </div>
                                         </div>
+                                        <div class="card-text">
+                                            <ul>
+                                                <li class="pt-1">Created web-scrapping bot using Selenium and BeautifulSoup
+                                                    to aquire thousands of relevant training images
+                                                </li>
+                                                <li class="pt-1">Trained custom YOLOv8 object detection model for barbell tracking, and
+                                                    OpenPose model for pose estimation
+                                                </li>
+                                                <li class="pt-1">Developed LSTM network for lift classification using barbell path and joint location
+                                                </li>
+                                                <li class="pt-1">Currently working on reducing model sizes and runing them on edge devices
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <a><img src="https://sam-harri.github.io/AcademicCV/project/cv-judge/plexample.webp"
@@ -446,17 +461,16 @@
                             </div>
                         </div>
 
-                        <div class="col-12 isotope-item js-id-web-dev">
-                            <div class="col-lg-12 mb-5 view-showcase">
+                        <div class="col-12 isotope-item js-id-web-dev card mt-3">
+                            <div class="col-lg-12 view-showcase card-body">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 order-md-2">
                                         <div class="section-subheading article-title mb-0 mt-0">
                                             <a>University of Ottawa Boxing Club Website</a>
                                         </div>
-                                        <div class="article-style">
-                                            Web application to handle the registration and waitlisting of the boxing
-                                            club classes. Email reminders, waitlist updates, and attendance sheet
-                                            automatically sent.
+                                        <div class="article-style mb-1">
+                                            Web application to handle the registration the boxing
+                                            club classes
                                         </div>
                                         <div class="row">
                                             <div class="btn-links ml-3">
@@ -474,6 +488,16 @@
                                                 </a>
                                             </div>
                                         </div>
+                                        <div class="card-text">
+                                            <ul>
+                                                <li class="pt-1">Developed a website for the university boxing club using Next.js, Tailwind, and Framer Motion
+                                                </li>
+                                                <li class="pt-1">Implemented enrollment and waitlisting functionality, allowing users to enroll in classes or join a waitlist if the class was full without making an account, managed with FastAPI and MongoDB
+                                                </li>
+                                                <li class="pt-1">Created an automated email system using SMTP to send unique unenrollment links upon registration and notify waitlisted users when they are moved into a class
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-md-6 order-md-1">
                                         <a><img src="https://sam-harri.github.io/AcademicCV/project/uobc/uobcwebsite.png"
@@ -484,19 +508,14 @@
                             </div>
                         </div>
 
-                        <div class="col-12 isotope-item js-id-machine-learning">
-                            <div class="col-lg-12 mb-5 view-showcase">
+                        <div class="col-12 isotope-item js-id-machine-learning card mt-3">
+                            <div class="col-lg-12 view-showcase card-body">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 order-first">
                                         <div class="section-subheading article-title mb-0 mt-0">
                                             <a>Uranium Milling Plant - Hatch Ltd</a>
                                         </div>
-                                        <div class="article-style">Collaborated with engineering firm for honors
-                                            capstone project. Designed complete uranium milling process, from raw ore to
-                                            yellowcake. Completed robust economic analysis, gauged sensitivity using
-                                            Monte Carlo simulations. Optimized solvent extraction process using deep
-                                            reinforcing learning. Winner of University of Ottawa plant design
-                                            competition.</div>
+                                        <div class="article-style mb-1">Chemical Engineering Capstone Project</div>
                                         <div class="row">
                                             <div class="btn-links ml-3">
                                                 <a class="btn btn-outline-primary btn-page-header"
@@ -512,6 +531,18 @@
                                                     <i class="fa fa-file mr-1"></i>Report
                                                 </a>
                                             </div>
+                                            <div class="card-text">
+                                                <ul>
+                                                    <li class="pt-1">Collaborated with engineering firm Hatch Ltd. for my honors capstone project, designing a uranium milling process for a pilot plant in Saskatchewan
+                                                    </li>
+                                                    <li class="pt-1">Winner of the University of Ottawa plant design competition
+                                                    </li>
+                                                    <li class="pt-1">Designed and optimized solvent extraction prcoess using deep reinforcment learning
+                                                    </li>
+                                                    <li class="pt-1">Conducted a economic sensitivity analysis using Monte Carlo simulations and FANOVA to identify process parameters with the greatest impact on profitability
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
@@ -523,8 +554,8 @@
                             </div>
                         </div>
 
-                        <div class="col-12 isotope-item js-id-other">
-                            <div class="col-lg-12 mb-5 view-showcase">
+                        <!-- <div class="col-12 isotope-item js-id-other card mt-3">
+                            <div class="col-lg-12 view-showcase card-body">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6">
                                         <a><img src="https://sam-harri.github.io/AcademicCV/project/skyworks/featured_hudc6ec6fc3708ae834fc66373f4321049_144587_540x0_resize_q75_h2_lanczos.webp"
@@ -541,9 +572,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Additional project entries go here -->
+                        </div> -->
 
                     </div>
                 </div>
